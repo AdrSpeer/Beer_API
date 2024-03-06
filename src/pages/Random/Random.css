@@ -10,7 +10,7 @@
 }
 .random img {
   width: 35%;
-  height: 35%;
+  object-fit: cover;
 }
 
 .random-text div {
@@ -46,7 +46,6 @@
 @media only screen and (min-width: 568px) {
   .random img {
     width: 10%;
-    height: 10%;
   }
   .random-text img {
     width: 3vw;
