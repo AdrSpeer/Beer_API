@@ -1,0 +1,30 @@
+.starter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw 3vw;
+  text-align: left;
+  margin-bottom: 6vw;
+}
+.starter h2 {
+  background-color: #ffca41;
+  width: 100%;
+  color: white;
+  text-align: left;
+  padding-left: 3vw;
+  font-size: 30px;
+}
+.starter img {
+  width: 100%;
+  height: 60vw;
+}
+.starter p {
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.starter a {
+  text-decoration: none;
+  width: 100%;
+}
