@@ -16,17 +16,21 @@ const AllBeers = () => {
     <>
       <Nav />
       <section className="allbeers">
-        {allData?.map((item, index) => (
-          <article key={index}>
-            <img src={item.image_url} alt={item.name} />
-            <div className="allbeers-text">
-              <h2>{item.name}</h2>
-              <h3>{item.tagline}</h3>
-              <h4>created by: {item.name}</h4>
-              <Link to={`/detail/${item._id}`}>Details</Link>
-            </div>
-          </article>
-        ))}
+        {allData ? (
+          allData?.map((item, index) => (
+            <article key={index}>
+              <img src={item.image_url} alt={item.name} />
+              <div className="allbeers-text">
+                <h2>{item.name}</h2>
+                <h3>{item.tagline}</h3>
+                <h4>created by: {item.name}</h4>
+                <Link to={`/detail/${item._id}`}>Details</Link>
+              </div>
+            </article>
+          ))
+        ) : (
+          <p>Laden...</p>
+        )}
       </section>
     </>
   );

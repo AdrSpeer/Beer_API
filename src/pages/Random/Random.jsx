@@ -2,21 +2,23 @@ import { useEffect, useState } from "react";
 import "./Random.css";
 import { Link } from "react-router-dom";
 import Nav from "../../components/Nav/Nav";
-
+// Page für Random Produkte
 const Random = () => {
+  // useState für alle Daten(allData)
   const [allData, setAllData] = useState(null);
-
+  // Fetch
   useEffect(() => {
     fetch("https://ih-beers-api2.herokuapp.com/beers/random")
       .then((res) => res.json())
       .then((data) => setAllData(data))
       .catch((err) => console.log("Error beim Laden der API", err));
   }, []);
-  console.log(allData);
+
   return (
     <>
       <Nav />
       <section className="random">
+        {/* Dom befüllen inkl. ternary für Ladevorgang */}
         {allData ? (
           <article>
             <img src={allData.image_url} alt={allData.name} />

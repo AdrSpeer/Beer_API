@@ -4,6 +4,7 @@ import "./Home.css";
 const Home = () => {
   return (
     <section className="home">
+      {/* Starter aus Components importiert */}
       <Starter
         img="../../../public/img/first.jpg"
         headline="All Beers"

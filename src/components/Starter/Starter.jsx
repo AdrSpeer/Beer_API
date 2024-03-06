@@ -1,6 +1,6 @@
 import "./Starter.css";
 import { Link } from "react-router-dom";
-
+// Komponente für die Homeseite
 const Starter = (props) => {
   return (
     <div className="starter">
