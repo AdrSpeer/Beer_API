@@ -28,3 +28,18 @@
   text-decoration: none;
   width: 100%;
 }
+
+/* ! Media Queries */
+
+@media only screen and (min-width: 568px) {
+  .starter img {
+    width: 70%;
+    height: 35vw;
+  }
+  .starter a {
+    width: 70%;
+  }
+  .starter p {
+    width: 70%;
+  }
+}

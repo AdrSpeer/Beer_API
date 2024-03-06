@@ -40,3 +40,21 @@
   line-height: 23px;
   font-weight: 500;
 }
+
+/* ! Media Queries */
+
+@media only screen and (min-width: 568px) {
+  .detail img {
+    width: 10%;
+    height: 10%;
+  }
+  .detail-text img {
+    width: 3vw;
+    height: 3vw;
+    cursor: pointer;
+  }
+  .detail-text div {
+    column-gap: 1vw;
+    width: 20vw;
+  }
+}

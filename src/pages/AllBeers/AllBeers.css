@@ -38,3 +38,16 @@
   border-radius: 10px;
   font-weight: 600;
 }
+
+/* ! Media Queries */
+
+@media only screen and (min-width: 568px) {
+  .allbeers article {
+    height: 80vh;
+    padding: 5vw 0;
+  }
+  .allbeers article img {
+    width: 15%;
+    height: 100%;
+  }
+}
